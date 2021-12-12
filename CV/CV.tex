@@ -1,5 +1,5 @@
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
@@ -17,7 +17,7 @@
 \renewcommand{\listitemsymbol}{~~~~} % Changes the symbol used for lists
 
 %----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
+% NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
 \firstname{Jonathan} % Your first name
@@ -26,35 +26,33 @@
 \title{Research CV}
 
 \begin{document}
-
+	
 \makecvtitle
 
 \section{Contact Information}
 
 \cvitem{\textbf{}Email:}{jonathan.n.marty@gmail.com \textit{} }
 \cvitem{\textbf{}Phone:}{732-397-1450 \textit{} }
-\cvitem{\textbf{}Website:}{https://github.com/jonmarty}
-\cvitem{}{https://www.linkedin.com/in/jonathan-m-848204137/ }
+\cvitem{\textbf{}Website:}{\href{https://github.com/jonmarty}{https://github.com/jonmarty}, \href{https://www.linkedin.com/in/jonathan-m-848204137/}{https://www.linkedin.com/in/jonathan-m-848204137/} }
 
 \section{Education}
 
-\cvitem{2019-Present}{\textbf{BS of Computer Science:} School of Engineering, Columbia University, New York, NY}
-\cvlistitem{GPA: 3.7631}
+\cvitem{2019-Present}{\textbf{BS in Computer Science, Minor in Applied Math:} School of Engineering, Columbia University, New York, NY}
+\cvlistitem{GPA: 3.8, Relevant Courses: Topology, Analytic Methods for PDEs, Modern Algebra I, Analysis of Algorithms I, Computational Neuroscience, Accelerated Physics I \& II}
 
 \cvitem{2015-2019}{\textbf{High School Education:} Holmdel High School, Holmdel, NJ}
-\cvlistitem{GPA: 4.6/5.0}
+\cvlistitem{GPA: 4.6/4.0 (weighted); SAT: 1550, Verbal: 750, Math: 800; SAT Subject Tests: 800 Physics, 800 Math II; 5/5 on 8 AP Exams}
 
 \section{Research Experience}
 
 \renewcommand{\listitemsymbol}{} % Changes the symbol used for lists
+\cvitem{2020-Present}{\textbf{Student Researcher, Bionet Lab, Columbia University:} A mentored individual project attempting to leverage recent advances in neuroanatomic data to push forward the functional understanding of the fruit fly (Drosophila Melanogaster) circadian clock. Currently focusing on using the frequency and phase dynamics of networks of relaxation oscillators to elucidate the transfer of relative time information in the circadian clock. Have demonstrated behaviors such as one oscillator "silencing" another and two oscillators "synchronizing" (both in phase and frequency) under mutual inhibition . Working to integrate these findings with existing connectomic and morphological data to create a computational model of the circadian clock.}
+	
+\cvitem{Summer 2020}{\textbf{Intern, AT\&T Labs Cyber Security Organization} Performed research aimed at detecting malicious activity in large-scale IP networks. Used temporal trends in graph structure, most notably the Triad Census of IP connections, to detect P2P (Peer to Peer) botnets, which do not share the hierarchical structure of most IP networks. Combined this analysis with several other security metrics and developed an ensemble decision tree model that detected 32\% of all suspected malicious HTTP source devices with a 25\% true positive rate.}
+			
+\cvitem{Summer 2018}{\textbf{Intern, Bionet Lab, Columbia University:} Performed development and research at the Columbia University Bionet lab, whose mission is to develop computation models of brain function (\href{http://www.bionet.ee.columbia.edu}{http://www.bionet.ee.columbia.edu}). Packaged Fruit Fly Brain Observatory software using Docker which led to the adoption of the research platform by other universities and is currently being used as the basis for a graduate class. Implemented a 47 layer recurrent convolutional neural network model of the fruit fly early visual system. This work was done to test the efficacy of research done in the paper "A Connectome Based Hexagonal Lattice Convolutional Network Model of the Drosophila Visual System" (\href{https://arxiv.org/abs/1806.04793}{https://arxiv.org/abs/1806.04793}). This involved building the model from scratch in Keras, implementing custom Keras layers and functionality using Tensorflow as a backend (ex. implementing hexagonal convolution), and performing statistical tests and analyses to gauge the model's performance.}
 
-\cvitem{2020-Present}{\textbf{Student Researcher, Bionet Lab, Columbia University:} A mentored individual project attempting to leverage recent advances in neuroanatomic data (the Hemibrain project) to push forward the functional understanding of the fruit fly (Drosophila Melanogaster) circadian clock through modelling. Previous models of the circadian clock have either been purely mathematical (ex. networks of Kuramoto oscillators), abstracting the physical underpinning of the circadian clock, or tangled in the low-level biology (ex. chemical reaction networks based on known reactions). The first type of model is elegant, but it doesn't the details of the system. The second type of model is as detailed as possible, but at the cost of intuition. In this project, I'm attempting to create a model that addresses the complex dynamics of the circadian clock without throwing away intuition.}
-
-\cvitem{Summer 2020}{\textbf{Intern, AT\&T CSO:} Researched and created a graph visualization of cloud account configurations for the Astra Portal with additional cybersecurity features in KeyLines, a Javascript graph visualization library. Will be integrated into the Astra product. Performed a holistic analysis of novel FirstNet data, including leveraging KeyLines to create interactive dynamic graph visuals of network structure. From these visuals, I had the idea to use temporal trends in graph structure to detect P2P (Peer to Peer) botnets, which do not share the hierarchical structure of most IP networks. In order to measure these trends, I used the Triad Census algorithm on temporal snapshots of the graph of FirstNet IP traffic. I didn't end up completing this project, but I took the results of the Triad Census algorithm and several other security metrics and developed an ensemble decision tree model that detected 32\% of all suspected malicious HTTP source devices with a 25\% true positive rate.}
-
-\cvitem{Summer 2018}{\textbf{Intern, Bionet Lab, Columbia University:} Performed development and research at the Columbia University Bionet lab, whose mission is to develop computation models of brain function (http://www.bionet.ee.columbia.edu). Packaged Fruit Fly Brain Observatory software using Docker which led to the adoption of the research platform by other universities and is currently being used as the basis for a graduate class. Implemented an existing model of the fruit fly early visual system using Keras and Tensorflow to test its efficacy.}
-
-\cvitem{2017-2019}{\textbf{Adjunct Employee, Perspecta Labs, Red Bank, NJ:} Participating in DARPA RADICS (https://www.darpa.mil/news-events/2015-12-14) project focused on securing our nations critical infrastructure. Developed methods to collect, clean, and normalize power grid network threat metrics. Evaluated data in unsupervised machine learning outlier detection algorithms. Developed novel method to enhance network intrusion detection techniques using neural spike train measures.}
+\cvitem{2017-2019}{\textbf{Adjunct Employee, Perspecta Labs, Red Bank, NJ:} Participating in DARPA RADICS (\href{https://www.darpa.mil/news-events/2015-12-14}{https://www.darpa.mil/news-events/2015-12-14}) project focused on securing our nations critical infrastructure. Developed methods to collect, clean, and normalize power grid network threat metrics. Evaluated data in unsupervised machine learning outlier detection algorithms. Developed novel method to enhance network intrusion detection techniques using neural spike train measures.}
 
 \cvitem{Summer 2017}{\textbf{Intern, Vencore Labs, Red Bank, NJ:} Secured paid internship to participate in developing system for electric power grid control network security. Developed interface to dynamically add new threat detection metrics to power grid network security monitoring system. Contributed improvements to authentication and entitlements to support dynamic configuration. Invited to continue employment during 2017-2018 school year.}
 
@@ -62,9 +60,9 @@
 
 \section{Publications}
 
-\cvitem{Not Published}{\textit{J. Marty, G. Di Crescenzo, \enquote{Analysis of Temporal Point Events for Network Intrusion Detection using Neural Spike Train Distance Measures}.}}
+\cvitem{Working Paper}{\textit{J. Marty, G. Di Crescenzo, \enquote{Analysis of Temporal Point Events for Network Intrusion Detection using Neural Spike Train Distance Measures}.}}
 \cvitem{2018}{\textit{J. Marty, S. Pietrowicz, \enquote{Economic Incentives for Reducing Peak Power Utilization in Electric Vehicle Charging Stations}, IEEE PES Innovative Smart Grid Technologies Conference, Washington DC, Feb 19-22, 2018}}
-\cvlistitem{https://ieeexplore.ieee.org/document/8403377}
+\cvlistitem{\href{https://ieeexplore.ieee.org/document/8403377}{https://ieeexplore.ieee.org/document/8403377}}
 
 \section{Technical Skills}
 
@@ -78,9 +76,9 @@
 \cvitem{}{Docker, Ansible}
 
 \subsection{Libraries}
-\cvitem{} {Keras, Tensorflow, PyTorch, networkx}
+\cvitem{} {Keras, Tensorflow, PyTorch, SciPy, networkx}
 
 \section{Other}
-\cvitem{}{\textbf{Interesting video of me:} https://www.youtube.com/watch?v=CZv1PpTdIZ4}
+\cvitem{}{\textbf{Interesting video of me:} \href{https://www.youtube.com/watch?v=CZv1PpTdIZ4}{https://www.youtube.com/watch?v=CZv1PpTdIZ4}}
 
 \end{document}
